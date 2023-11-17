@@ -1,13 +1,15 @@
 import Image from 'next/image'
 import React from 'react'
+import Link from 'next/link'
 
 export default function Home() {
+
   return (
     <main className="m-auto flex min-h-screen flex-col justify-between p-24 align-center w-[80%]">
       <div className="text-center m-auto mt-0">
         <h1 className='text-8xl font-bold'>Scale success with automation</h1>
         <p className='text-3xl m-10'>Build automated Web3 workflows customized for your business</p>
-        <button className='m-2 p-4 pl-10 pr-10 bg-pink-500 rounded-full text-white font-bold'>Start for free</button>
+        <Link href="/dashboard" className='m-2 p-4 pl-10 pr-10 bg-pink-500 rounded-full text-white font-bold'>Start for free</Link>
       </div>
       <div className='shadow-md align-center justify-center m-auto w-[80%] mt-20'>
         <div className='flex bg-green-800 text-white text-bold rounded-xl w-[100%]'>
